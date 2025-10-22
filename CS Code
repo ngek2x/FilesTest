@@ -1,0 +1,41 @@
+Clean Code Basics in C#
+
+Writing clean code means writing code that is easy to read, maintain, and extend. 
+The following are some core principles of clean code in C#.
+
+1. Meaningful Naming
+Use clear and descriptive names for variables, methods, and classes.
+Example:
+    // Bad
+    int d;
+
+    // Good
+    int daysSinceLastBackup;
+
+2. Small and Focused Methods
+Each method should perform a single, well-defined task.
+Example:
+    // Bad
+    void ProcessDataAndSaveToFile() { }
+
+    // Good
+    void ProcessData() { }
+    void SaveToFile() { }
+
+3. Avoid Magic Numbers
+Replace hard-coded numbers with named constants or enums.
+Example:
+    // Bad
+    if (userType == 1) { }
+
+    // Good
+    if (userType == UserType.Admin) { }
+
+4. Use Proper Formatting
+Consistent indentation and spacing improve readability.
+
+5. Write Comments Only When Needed
+Explain WHY, not WHAT.
+
+6. Keep Classes Small and Focused
+Follow the Single Responsibility Principle (SRP) — each class should have one reason to change.
